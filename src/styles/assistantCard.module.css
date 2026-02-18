@@ -1,0 +1,217 @@
+.overlayRoot {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999999;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial;
+}
+
+.card {
+  background: rgba(20, 20, 22, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+.bot {
+  opacity: 0.9;
+}
+
+.status {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+
+.metaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.metaLabel {
+  font-size: 11px;
+  opacity: 0.65;
+}
+.metaValue {
+  font-size: 13px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+}
+
+.subtle {
+  opacity: 0.7;
+}
+.subtleSmall {
+  font-size: 11px;
+  opacity: 0.65;
+}
+
+.linkButton {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  cursor: pointer;
+}
+.linkButton:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.whyList {
+  margin: 0 14px 10px 28px;
+  padding: 0;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.section {
+  padding: 10px 14px 14px 14px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 650;
+  opacity: 0.95;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 10px;
+  outline: none;
+  line-height: 1.35;
+  font-size: 13px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.primary,
+.secondary,
+.ghost {
+  border-radius: 12px;
+  padding: 9px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.primary {
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(20, 20, 22, 1);
+  font-weight: 650;
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.ghost {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.primary:disabled,
+.secondary:disabled,
+.ghost:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.quietBox {
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.quietTitle {
+  font-size: 12px;
+  font-weight: 650;
+  margin-bottom: 4px;
+}
+.quietText {
+  font-size: 12px;
+  opacity: 0.85;
+}
+.quietHint {
+  font-size: 11px;
+  opacity: 0.65;
+  margin-top: 6px;
+}
+
+.errorBox {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 80, 80, 0.12);
+  border: 1px solid rgba(255, 80, 80, 0.25);
+  font-size: 12px;
+}
+
+.footer {
+  padding: 10px 14px 14px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerNote {
+  font-size: 11px;
+  opacity: 0.7;
+}
